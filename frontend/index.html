@@ -14,7 +14,17 @@
         <h1>Medicine Tracker</h1>
     </header>
     <main>
+        <h2>Add New Medicine</h2>
+        <form id="add-medicine-form">
+            <label>Medicine Name:</label>
+            <input type="text" id="medicine-name" required>
 
+            <label>Price (£):</label>
+            <input type="number" id="medicine-price" step="0.01" min="0">
+            <button type="submit">Add Medicine</button>
+        </form>
+        <h2>Medicine List</h2>
+        <div id="medicines-list"></div>
     </main>
     <script src="script.js"></script>
 </body>
